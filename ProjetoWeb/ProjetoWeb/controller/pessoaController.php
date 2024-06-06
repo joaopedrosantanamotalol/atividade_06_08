@@ -6,8 +6,11 @@ class PessoasController{//classe da pessoa controller
     private $pessoa;
 
     public function _construct(){//metodo construtor
-        $this->pessoa = new Pessoa(); 
-        $this->inserir();
+      $this->pessoa = new Pessoa(){
+          if($_GET['acao'] == 'inserir'){
+          $this->inserir();
+          }
+      }
     }
 //bloco para set variaveis no banco
     public function inserir(){//metodo inserir ao banco
