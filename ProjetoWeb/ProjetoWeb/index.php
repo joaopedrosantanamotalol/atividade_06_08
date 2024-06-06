@@ -7,7 +7,7 @@
 <body>
     <div class="container">
         <h2>Cadastro</h2>
-        <form method="POST" action="controller/pessoaController.php"> <!--direcionamento para o pessoa Controller -->
+        <form method="POST" action="controller/pessoaController.php?acao=inserir"> <!--direcionamento para o pessoa Controller -->
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
