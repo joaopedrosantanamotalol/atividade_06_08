@@ -1,6 +1,6 @@
 <?php
 
-require_once '../model/pessoas.php'; // Equivalente ao Import do Java, necessário para fazer a linha 9 funcionar por exemplo. Require = import, once = import prioritário
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/pessoas.php'; // Equivalente ao Import do Java, necessário para fazer a linha 9 funcionar por exemplo. Require = import, once = import prioritário de forma automatica
 
 class PessoasController{//classe da pessoa controller
     private $pessoa;
