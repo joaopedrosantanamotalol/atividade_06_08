@@ -24,7 +24,10 @@ class PessoasController{//classe da pessoa controller
         //fim
         $this->pessoa->inserir();//locando pessoa ao inserir
     }
-
+        public function( listar(){
+return $this->pessoa->listar();
+            
+        }
 }    
 new PessoasController();//classe principal
 ?>
